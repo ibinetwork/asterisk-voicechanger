@@ -13,7 +13,7 @@ voicechanger.o: voicechanger.cpp
 	g++ $(CFLAGS) -c -o $@ $<
 
 install: all
-	cp -av app_voicechanger.so /usr/lib/asterisk/modules/
+	cp -av app_voicechanger.so /usr/lib64/asterisk/modules/
 
 clean:
 	rm -f *.o *.so
